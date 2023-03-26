@@ -10,7 +10,7 @@ public class Vehiculo {
     private double peso;
     private String traccion;
     private Fabricante fabricante;
-    private static int cantidadVehiculos = 0;
+    private static int cantidadVehiculos;
     
     private static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
     
