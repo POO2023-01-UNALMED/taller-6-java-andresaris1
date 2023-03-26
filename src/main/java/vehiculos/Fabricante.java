@@ -17,10 +17,10 @@ public class Fabricante {
     	int mayorVendedor = 0;
     	Fabricante fabricaMayor = null;
     	for (int i = 0;i<fabricantes.size();i++) {
-    		Fabricante pfabricante = fabricantes.get(i);
-    		if (pfabricante.getNumeroVendidos()>mayorVendedor) {
-    			mayorVendedor = pfabricante.getNumeroVendidos();
-    			fabricaMayor = pfabricante;
+    		Fabricante p_fabricante = fabricantes.get(i);
+    		if (p_fabricante.getNumeroVendidos()>mayorVendedor) {
+    			mayorVendedor = p_fabricante.getNumeroVendidos();
+    			fabricaMayor = p_fabricante;
     		}
     	}
     	return fabricaMayor;
