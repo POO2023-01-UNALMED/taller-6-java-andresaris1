@@ -15,10 +15,10 @@ public class Pais {
     	int mayorVendedor = 0;
     	Pais paisMayor = null;
     	for (int i = 0;i<fabricantes.size();i++) {
-    		Fabricante pfabricante = fabricantes.get(i);
-    		if (pfabricante.getPais().getNumeroVendidos()>mayorVendedor) {
-    			mayorVendedor = pfabricante.getPais().getNumeroVendidos();
-    			paisMayor = pfabricante.getPais();
+    		Fabricante p_fabricante = fabricantes.get(i);
+    		if (p_fabricante.getPais().getNumeroVendidos()>mayorVendedor) {
+    			mayorVendedor = p_fabricante.getPais().getNumeroVendidos();
+    			paisMayor = p_fabricante.getPais();
     		}
     	}
     	return paisMayor;
