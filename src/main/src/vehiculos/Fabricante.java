@@ -1,4 +1,5 @@
 package vehiculos;
+import java.util.ArrayList;
 
 public class Fabricante {
 	private String nombre;
@@ -11,6 +12,19 @@ public class Fabricante {
         numeroVendidos++;
     }
     
+    public static Fabricante fabricaMayorVentas() {
+    	ArrayList<Fabricante> fabricantes = Vehiculo.getFabricantes();
+    	int mayorVendedor = 0;
+    	Fabricante fabricaMayor = null;
+    	for (int i = 0;i<fabricantes.size();i++) {
+    		Fabricante pfabricante = fabricantes.get(i);
+    		if (pfabricante.getNumeroVendidos()>mayorVendedor) {
+    			mayorVendedor = pfabricante.getNumeroVendidos();
+    			fabricaMayor = pfabricante;
+    		}
+    	}
+    	return fabricaMayor;
+    }
     
     public int getNumeroVendidos() {
     	return numeroVendidos;
