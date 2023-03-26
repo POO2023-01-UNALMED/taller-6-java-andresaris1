@@ -5,8 +5,9 @@ public class Camion extends Vehiculo{
     private static int cantidadCamiones = 0;
     
     public Camion(String placa, int puertas, int velocidadMaxima, String nombre, double precio, double peso, String traccion, Fabricante fabricante, int ejes) {
-        super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
+        super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
         this.ejes = ejes;
+        cantidadCamiones++;
     }
 
     public int getEjes() {
