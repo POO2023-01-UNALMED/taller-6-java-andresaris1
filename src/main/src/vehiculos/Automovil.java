@@ -7,8 +7,9 @@ public class Automovil extends Vehiculo{
     
     public Automovil(String placa, int puertas, int velocidadMaxima, String nombre, 
                      double precio, double peso, String traccion, Fabricante fabricante, int puestos) {
-        super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
+        super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante);
         this.puestos = puestos;
+        cantidadAutomoviles++;
     }
     
     public int getPuestos() {
